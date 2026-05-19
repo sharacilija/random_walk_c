@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SDL2 Project",
+            "type": "shell",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "random_walk.c",
+                "-o",
+                "random_walk.exe",
+
+                "-IC:/msys64/mingw64/include/SDL2",
+                "-LC:/msys64/mingw64/lib",
+
+                "-Wall",
+                "-Wextra",
+                "-g",
+
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

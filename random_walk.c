@@ -179,3 +179,10 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+/*
+    if making changes:
+    git add .
+    git commit -m "Describe what changed"
+    git push
+*/
